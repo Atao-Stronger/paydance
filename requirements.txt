@@ -1,0 +1,2 @@
+Pillow
+PySide6-Essentials==6.12.0

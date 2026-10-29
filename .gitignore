@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local source-run settings contain personal salary and schedule data.
+config.json
+config.json.bak
+config.json.corrupt
+
+# Packaged releases and build output.
+release/
+build/
+dist/

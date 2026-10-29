@@ -1,0 +1,16 @@
+下班倒计时 - third-party notices
+
+The application remains licensed under MIT (see LICENSE).
+
+Qt for Python / PySide6 Essentials and Shiboken6 6.12.0
+Copyright (C) The Qt Company Ltd. and other contributors.
+Distributed under LGPL-3.0. Qt is dynamically linked; its DLLs are in _internal/PySide6.
+License texts: licenses/LGPL-3.0.txt and licenses/GPL-3.0.txt.
+Project and source: https://code.qt.io/cgit/pyside/pyside-setup.git/?h=6.12.0
+Qt source: https://code.qt.io/cgit/qt/qtbase.git/?h=6.12.0
+Documentation: https://doc.qt.io/qtforpython-6/
+
+Pillow
+Project, source and license: https://github.com/python-pillow/Pillow
+Pillow and other bundled dependencies retain their respective licenses;
+installed package notices are included in _internal where supplied by the packager.
