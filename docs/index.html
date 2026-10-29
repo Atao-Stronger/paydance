@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PayDance 下班倒计时：实时展示距离下班时间、工作进度和今日收入。">
+  <title>PayDance · 下班倒计时</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      background: #08111c;
+      color: #eef6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(62, 199, 255, 0.2), transparent 32rem),
+        radial-gradient(circle at 85% 75%, rgba(255, 191, 71, 0.14), transparent 30rem),
+        #08111c;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0 48px;
+    }
+
+    .eyebrow {
+      color: #70d7ff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 18px 0;
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 0;
+      color: #aebed0;
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      line-height: 1.75;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 32px 0 56px;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border: 1px solid #365168;
+      border-radius: 14px;
+      color: #eef6ff;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 160ms ease, border-color 160ms ease;
+    }
+
+    a.button:hover {
+      transform: translateY(-2px);
+      border-color: #70d7ff;
+    }
+
+    a.primary {
+      border-color: transparent;
+      background: linear-gradient(135deg, #55cdf6, #25a6df);
+      color: #05111b;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    article {
+      min-height: 188px;
+      padding: 24px;
+      border: 1px solid rgba(126, 161, 190, 0.2);
+      border-radius: 20px;
+      background: rgba(11, 25, 39, 0.76);
+      box-shadow: 0 18px 70px rgba(0, 0, 0, 0.2);
+    }
+
+    article span {
+      display: block;
+      color: #ffc45f;
+      font-size: 1.6rem;
+      font-weight: 800;
+    }
+
+    article h2 {
+      margin: 18px 0 8px;
+      font-size: 1.1rem;
+    }
+
+    article p,
+    footer {
+      color: #91a4b7;
+      line-height: 1.65;
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #70d7ff;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding-top: 48px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Desktop countdown · Salary tracker</p>
+    <h1>下班之前，<br>每一秒都有回响。</h1>
+    <p class="lead">
+      PayDance 是一款常驻桌面的下班倒计时工具。它按你的工作时间和薪资设置，
+      实时展示工作进度、距离下班的时间与今日收入。
+    </p>
+
+    <div class="actions">
+      <a class="button primary" href="https://github.com/Atao-Stronger/paydance/releases/latest">下载最新版本</a>
+      <a class="button" href="https://github.com/Atao-Stronger/paydance">查看源代码</a>
+      <a class="button" href="https://github.com/Atao-Stronger/paydance/actions/workflows/build-desktop.yml">构建状态</a>
+    </div>
+
+    <section class="grid" aria-label="主要功能">
+      <article>
+        <span>01</span>
+        <h2>实时倒计时</h2>
+        <p>按上下班、午休和加班时间计算当天剩余工作时长。</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>收入进度</h2>
+        <p>支持日薪、月薪、补贴、加班收入和个人缴纳金额配置。</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>桌面常驻</h2>
+        <p>提供悬浮窗口、主题、缩放、透明度和日历统计能力。</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>
+        Windows 与 macOS 构建由 GitHub Actions 自动生成。未签名安装包在首次运行时可能显示系统安全提示。
+        项目采用 <a href="https://github.com/Atao-Stronger/paydance/blob/main/LICENSE">MIT License</a>。
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
